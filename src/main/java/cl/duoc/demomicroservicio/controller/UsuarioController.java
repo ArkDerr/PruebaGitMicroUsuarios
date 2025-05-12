@@ -29,6 +29,7 @@ public class UsuarioController {
     @Autowired
     private UsuarioService usuarioservice;
 
+    //Endpoint get para obtener todos los usuarios
     @GetMapping
     public ResponseEntity<List<Usuario>> Listar(){
         List<Usuario> usuarios = usuarioservice.BuscarTodo();
